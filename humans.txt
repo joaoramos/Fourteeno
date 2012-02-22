@@ -1,0 +1,22 @@
+/*************
+*** Author ***
+*************/
+
+	Front-End Engineer:		João Ramos
+	Email:					hello [at] joaoramos.org
+	Twitter:				@joaotiago
+	From:					Aveiro, Portugal
+	Tea:					Green with ginseng, no sugar
+
+
+
+/**************
+*** Website ***
+**************/
+
+	Last update:			February 2012
+	Standards: 				HTML5 and CSS3
+	Components:				jQuery
+	Software:				Coda, CodeKit, Less
+	Credits:				Joni Korpi, http://html5boilerplate.com/mobile
+							H5BP3, http://html5boilerplate.com/mobile
