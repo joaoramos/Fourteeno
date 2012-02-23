@@ -12,6 +12,5 @@ Please have these observations under consideration:
 * I use CodeKit to compile, compact and minify my LESS styles, JavaScript code and optimize my images (hence the `-min` sufix);
 * I'm using 5 media queries in a Mobile-first approach: 4, 6, 8, 12 and 14 columns;
 * There is **no documentation**. That's why I'd recommend you to check <a href="http://frameless.org">Frameless grid</a>, <a href="http://html5boilerplate.com">HTML5 Boilerplate</a> and <a href="http://stuffandnonsense.co.uk/projects/320andup/">320andup</a> for inspiration;
-<<<<<<< HEAD
-* If you haven't read Ethan Marcotte's <a href="http://www.abookapart.com/products/responsive-web-design">Responsive Web Design</a>, you're probably doing it wrong.
+* If you haven't read Ethan Marcotte's <a href="http://www.abookapart.com/products/responsive-web-design">Responsive Web Design</a>, you're probably doing it wrong;
 * Print <a href="https://github.com/joaoramos/Responsive-HTML5-Boilerplate/blob/master/Grid.pdf">Grid.pdf</a> and sketch before coding.
