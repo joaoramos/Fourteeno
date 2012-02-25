@@ -6,7 +6,7 @@
 @line: 24;
 @em: @font-size*1em;
 
-@column: 48;
+@column: 52;
 @gutter: 24;
 
 
@@ -199,70 +199,82 @@ img::-moz-selection {
 @white:		rgb(244,244,242);
 
 /*
-	Mobile layout 
-	240–479 px
-	Zoomed out below 320px (20em: 4cols)
+	  1st:		Mobile layout
+	4cols:		17.5em (280px)
+	Scope:		0–479px
 */
 
 body {
 	font-size: @font-size/@em;
 	line-height: @line/@em;
 	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+	left: 0.5*@gutter/@em; /* Compensation for column margin-right */
 }
 
 .wrapper {
-	.width(4);
+	width: @4cols + @gutter/@em;
 	margin: 0px auto;
+	overflow: hidden;
+	
+	div {
+		display: block;
+		.width(1);
+		float: left;
+		height: 1000/@em;
+		background: #eee;
+		margin-right: @gutter/@em;		
+	}
 }
 
 /*
-	Wide mobile layout
-	480-767 px
-	Zoomed in above 480px (30em: 6cols)
+	  2nd:		Wide mobile layout
+	6cols:		27em (432px)
+	Scope:		480-599px
 */
 
 @media screen and (min-width: 30em) {
 	
 	.wrapper {
-		.width(6);
+		width: @6cols + @gutter/@em;			
 	}
 }
 
 /*
-	Tablet layout 
-	600-911 px
-	Zoomed in above 600px (37.5em: 8cols)
+	  3rd:		Tablet layout
+	8cols:		36.5em (584px)
+	Scope:		600-911px
 */
 
 @media screen and (min-width: 37.5em) {
 
 	.wrapper {
-		.width(8);
+		width: @8cols + @gutter/@em;
 	}
 }
 
 /*
-	Widescreen layout 
-	912-1887 px
-	Zoomed in above 912px (57em: 12cols)
+	   4th:		Wide tablet layout
+	12cols:		55.5em (888px)
+	 Scope:		912-1199px
 */
 
 @media screen and (min-width: 57em) {
 
 	.wrapper {
-		.width(12);
+		width: @12cols + @gutter/@em;
 	}
 }
 
 /*
-	Huge layout 
-	1040+ px
-	Zoomed in above 1200px (75em: 14cols)
+	   5th:		Laptop layout +
+	14cols:		65em (1040px)
+	 Scope:		1200-∞
 */
 
 @media screen and (min-width: 75em) {
 	.wrapper {
-		.width(14);
+		width: @14cols + @gutter/@em;
 	}
 }
 
